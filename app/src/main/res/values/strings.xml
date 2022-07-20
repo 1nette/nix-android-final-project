@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="infoTextView">Information</string>
+    <string name="waterImage">water</string>
+    <string name="milkImage">milk</string>
+    <string name="beansImage">beans</string>
+    <string name="cupsImage">cups</string>
+    <string name="moneyImage">money</string>
+</resources>
