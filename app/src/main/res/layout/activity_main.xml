@@ -7,35 +7,34 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/infoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/infoTextView"
-        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/infoView"
         android:layout_width="394dp"
         android:layout_height="92dp"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/infoTextView" />
 
     <ImageView
         android:id="@+id/waterImage"
         android:layout_width="40dp"
         android:layout_height="45dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="34dp"
         android:contentDescription="@string/waterImage"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/infoView"
+        app:layout_constraintTop_toTopOf="@+id/infoView"
         app:srcCompat="@drawable/water" />
 
     <ImageView
@@ -45,8 +44,8 @@
         android:layout_marginStart="25dp"
         android:contentDescription="@string/milkImage"
         app:layout_constraintStart_toEndOf="@+id/waterImage"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:srcCompat="@drawable/milk_bottle" />
+        app:layout_constraintTop_toTopOf="@+id/infoView"
+        app:srcCompat="@drawable/milk" />
 
     <ImageView
         android:id="@+id/beansImage"
@@ -55,8 +54,8 @@
         android:layout_marginStart="25dp"
         android:contentDescription="@string/beansImage"
         app:layout_constraintStart_toEndOf="@+id/milkImage"
-        app:layout_constraintTop_toTopOf="@+id/view"
-        app:srcCompat="@drawable/coffee_beans" />
+        app:layout_constraintTop_toTopOf="@+id/infoView"
+        app:srcCompat="@drawable/beans" />
 
     <ImageView
         android:id="@+id/cupsImage"
@@ -65,7 +64,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="38dp"
         android:contentDescription="@string/cupsImage"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/infoView"
         app:layout_constraintStart_toEndOf="@+id/beansImage"
         app:srcCompat="@drawable/cup" />
 
@@ -76,15 +75,233 @@
         android:layout_marginStart="30dp"
         android:contentDescription="@string/moneyImage"
         app:layout_constraintStart_toEndOf="@+id/cupsImage"
-        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/infoView"
         app:srcCompat="@drawable/money" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="122dp"
-        android:layout_height="137dp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/waterValue"
+        app:layout_constraintStart_toStartOf="@+id/waterImage"
+        app:layout_constraintTop_toBottomOf="@+id/waterImage" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/milkValue"
+        app:layout_constraintStart_toStartOf="@+id/milkImage"
+        app:layout_constraintTop_toBottomOf="@+id/milkImage" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/beansValue"
+        app:layout_constraintStart_toStartOf="@+id/beansImage"
+        app:layout_constraintTop_toBottomOf="@+id/beansImage" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/cupsValue"
+        app:layout_constraintStart_toStartOf="@+id/cupsImage"
+        app:layout_constraintTop_toBottomOf="@+id/cupsImage" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/moneyValue"
+        app:layout_constraintStart_toStartOf="@+id/moneyImage"
+        app:layout_constraintTop_toBottomOf="@+id/moneyImage" />
+
+    <TextView
+        android:id="@+id/buyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/buyTextView"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:srcCompat="@drawable/coffee_beans" />
+        app:layout_constraintTop_toBottomOf="@+id/infoView" />
+
+    <TextView
+        android:id="@+id/fillTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/fillTextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latteButton" />
+
+    <Button
+        android:id="@+id/cappuccinoButton"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="@color/brown"
+        android:text="@string/cappuccinoButton"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoView" />
+
+    <Button
+        android:id="@+id/latteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="@color/brown"
+        android:text="@string/latteButton"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/cappuccinoButton"
+        app:layout_constraintTop_toBottomOf="@+id/infoView" />
+
+    <Button
+        android:id="@+id/espressoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="@color/brown"
+        android:text="@string/espressoButton"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/latteButton"
+        app:layout_constraintTop_toBottomOf="@+id/infoView" />
+
+    <TextView
+        android:id="@+id/beansTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/beansTextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/milkTextView"
+        app:layout_constraintTop_toBottomOf="@+id/milkTextView" />
+
+    <TextView
+        android:id="@+id/waterTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/waterTextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/waterInput"
+        app:layout_constraintTop_toBottomOf="@+id/cappuccinoButton" />
+
+    <TextView
+        android:id="@+id/milkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/milkTextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/waterTextView4"
+        app:layout_constraintTop_toBottomOf="@+id/waterTextView4" />
+
+    <TextView
+        android:id="@+id/cupsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/cupsTextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/beansTextView"
+        app:layout_constraintTop_toBottomOf="@+id/beansTextView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/waterInput"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="93dp"
+        android:hint="@string/input_hint"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/latteButton"
+        app:layout_constraintTop_toBottomOf="@+id/latteButton"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/waterInput2"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/input_hint"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/waterInput"
+        app:layout_constraintTop_toBottomOf="@+id/waterInput" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/waterInput3"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:hint="@string/input_hint"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/waterInput2"
+        app:layout_constraintTop_toBottomOf="@+id/waterInput2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/waterInput4"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:hint="@string/input_hint"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/waterInput3"
+        app:layout_constraintTop_toBottomOf="@+id/waterInput3" />
+
+    <Button
+        android:id="@+id/fillButton"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/brown"
+        android:text="@string/fillTextView"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/waterInput4"
+        app:layout_constraintTop_toBottomOf="@+id/waterInput4"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/takeButton"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/brown"
+        android:text="@string/takeButton"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/cappuccinoButton"
+        app:layout_constraintTop_toBottomOf="@+id/fillButton" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/statusTextView"
+        android:textSize="18sp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="@+id/cappuccinoButton"
+        app:layout_constraintTop_toBottomOf="@+id/latteButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
