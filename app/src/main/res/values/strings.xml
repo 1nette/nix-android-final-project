@@ -6,4 +6,21 @@
     <string name="beansImage">beans</string>
     <string name="cupsImage">cups</string>
     <string name="moneyImage">money</string>
+    <string name="waterValue">0</string>
+    <string name="milkValue">0</string>
+    <string name="beansValue">0</string>
+    <string name="cupsValue">0</string>
+    <string name="moneyValue">0</string>
+    <string name="buyTextView">Buy</string>
+    <string name="cappuccinoButton">Cappuccino</string>
+    <string name="latteButton">Latte</string>
+    <string name="espressoButton">Espresso</string>
+    <string name="fillTextView">Fill</string>
+    <string name="waterTextView">Water:</string>
+    <string name="milkTextView">Milk:</string>
+    <string name="beansTextView">Coffee beans:</string>
+    <string name="cupsTextView">Disposable cups:</string>
+    <string name="input_hint">type here</string>
+    <string name="takeButton">Take money</string>
+    <string name="statusTextView">Coffee machine is ready</string>
 </resources>
